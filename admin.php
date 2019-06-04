@@ -21,7 +21,7 @@ include('functions.php');
 // 接收请求，默认是 main 页面
 $action = !empty($_GET['a']) ? $_GET['a'] : 'main';
 
-/* 登录权限验证 */
+/* 3.登录权限验证 */
 $noCheckLogin = ['login', 'dologin'];   // 不需要验证登录的地址
 if(!in_array($action,$noCheckLogin)){
    // 验证登录
@@ -29,6 +29,6 @@ if(!in_array($action,$noCheckLogin)){
 }
 
 // 加载要请求的文件
-include('./controller/admin/'.$action . '.php');
+include('./controller/admin/'. $action . '.php');
 
 ?>
