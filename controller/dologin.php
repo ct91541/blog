@@ -18,10 +18,10 @@ foreach($account as $v){
         
         // 把用户名保存到 SESSION 中做标记
         $_SESSION['name'] = $username;
-        message('登录成功!', 'index.php');
+        message('登录成功!', '');
     }
 }
 // 匹配失败
-message('账号或密码错误!', 'index.php?a=login');
+message('账号或密码错误!', 'login');
 
 ?>

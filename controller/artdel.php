@@ -7,6 +7,6 @@ $title = $_GET['title'];
 unlink('./data/arts/' . $title);
 
 // 提示消息 跳转
-message('删除成功!', 'index.php?a=all_articles');
+message('删除成功!', 'all_articles');
 
 ?>

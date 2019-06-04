@@ -12,6 +12,6 @@ file_put_contents('./data/arts/' . $oldtitle, $content);
 rename('./data/arts/' . $oldtitle, './data/arts/' . $title);
 
 // 4.提示跳转
-message('修改成功!', 'index.php?a=all_articles');
+message('修改成功!', 'all_articles');
 
 ?>

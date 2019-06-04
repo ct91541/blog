@@ -9,6 +9,6 @@ foreach($title as $v){
 }
 
 // 3.提示跳转
-message('删除成功!', 'index.php?a=all_articles');
+message('删除成功!', 'all_articles');
 
 ?>
